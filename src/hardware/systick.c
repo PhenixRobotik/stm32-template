@@ -15,7 +15,7 @@ void systick_setup(){
 }
 
 volatile uint32_t systicks = 0;
-static void sys_tick_handler() {
+void sys_tick_handler() {
 	systicks++;
 }
 
