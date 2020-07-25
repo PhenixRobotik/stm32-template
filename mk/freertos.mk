@@ -2,7 +2,9 @@ ifndef PROJECT_ROOT
 $(error PROJECT_ROOT is not set)
 endif
 
-RTOS_DIR     := $(PROJECT_ROOT)/FreeRTOS
+RTOS_DIR     := $(PROJECT_ROOT)/lib/FreeRTOS
+
+# Configuration
 RTOS_PORT    := $(RTOS_DIR)/portable/GCC/ARM_CM4F
 RTOS_MEMMANG := $(RTOS_DIR)/portable/MemMang
 RTOS_HEAP    := 1
