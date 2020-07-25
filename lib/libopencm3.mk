@@ -1,3 +1,8 @@
+# Adds libopencm3, libopencm3-clean targets
+# Variables :
+# OPENCM3_CDEFS                : Compiler defines required for opencm3
+# OPENCM3_INCLUDES             : Headers of opencm3
+# OPENCM3_LIB, OPENCM3_LIBNAME : path and name of opencm3
 ifndef PROJECT_LIBS
 $(error PROJECT_LIBS is not set)
 endif
@@ -11,6 +16,7 @@ OPENCM3_INC    := $(OPENCM3_DIR)/include
 OPENCM3_LIBNAME   = opencm3_stm32f3
 OPENCM3_TARGETS   = stm32/f3
 OPENCM3_CDEFS     = -DSTM32F3
+OPENCM3_LDFLAGS   = -L$(OPENCM3_LIB) -l$(OPENCM3_LIBNAME)
 OPENCM3_VERBOSITY = 0
 
 # Build library if not found
