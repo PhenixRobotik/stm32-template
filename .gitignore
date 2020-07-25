@@ -56,3 +56,10 @@ dkms.conf
 
 # OpenOCD
 *.log
+
+# CMake
+build/
+
+# VSCode
+.vscode/
+
