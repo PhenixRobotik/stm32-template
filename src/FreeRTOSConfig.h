@@ -207,4 +207,9 @@ standard names. */
 #define xPortPendSVHandler PendSV_Handler
 #define xPortSysTickHandler SysTick_Handler
 
+// Adapt CMSIS names to libopencm3 names
+#define SVC_Handler sv_call_handler
+#define SysTick_Handler sys_tick_handler
+#define PendSV_Handler pend_sv_handler
+
 #endif /* FREERTOS_CONFIG_H */
