@@ -56,3 +56,6 @@ dkms.conf
 
 # OpenOCD
 *.log
+
+# VS Code
+.vscode
